@@ -1,6 +1,6 @@
 // Mixinler
 @mixin mobile {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 400px) {
       @content;
     }
   }
@@ -28,8 +28,7 @@
     }
   }
   * {
-    margin: 0;
-    padding: 0;
+    
     
     font-family: 'Poppins', sans-serif;
 }
@@ -120,7 +119,7 @@
   }
   
   .home {
-    background-color: rgb(245, 206, 246);
+    background: linear-gradient(to right, rgb(113, 157, 174), rgb(144, 103, 178));
     height: 100vh;
     display: flex;
     align-items: center;
@@ -133,6 +132,10 @@
       height: 80%;
       display: flex;
       overflow: hidden;
+      border: 2px solid transparent;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 30px rgba(165, 165, 165, 0.497);
+      
   
       @include tablet {
         width: 90%;
@@ -140,24 +143,32 @@
   
       .sidebar {
         flex: 1;
-        background-color: rgb(145, 71, 167);
+        background: linear-gradient(to right, rgba(90, 98, 140, 0.668), rgb(139, 113, 161));
         position: relative;
         overflow-y: auto; // Scroll çubuğunu eklemek için
         max-height: 100vh;
+    
+        
   
         @include custom-scrollbar; // Transparan scrollbar'ı eklemek için
   
         .navbar {
           display: flex;
           align-items: center;
-          background-color: rgb(104, 22, 129);
+          background: linear-gradient(to right, rgba(96, 105, 156, 0.668), rgb(139, 113, 161));          
           height: 50px;
           padding: 10px;
           justify-content: space-between;
-          color: rgb(241, 222, 243);
+          color: rgb(255, 255, 255);
+          
+          
+          
+          
+          
   
           .logo {
             font-weight: bold;
+            
   
             @include tablet {
               display: none;
@@ -167,6 +178,7 @@
           .user {
             display: flex;
             gap: 10px;
+            
   
             img {
               background-color: aliceblue;
@@ -177,11 +189,12 @@
             }
   
             button {
-              background-color: rgb(227, 161, 240);
-              color: rgb(78, 3, 70);
-              font-size: 10px;
+              background-color: rgb(216, 205, 219);
+              color: rgba(112, 72, 213, 0.875);
               border: none;
+              border-radius: 5px;
               cursor: pointer;
+
   
               @include tablet {
                 position: absolute;
@@ -192,24 +205,28 @@
         }
   
         .search {
-          border-bottom: 1px solid rgb(125, 11, 116);
-  
-          .searchForm {
-            input {
-              background-color: transparent;
-              border: none;
-              color: rgb(247, 233, 245);
-              outline: none;
-  
-              &::placeholder {
-                color: #f3e6f5;
+            border-bottom: 1px solid gray;
+    
+            .searchForm {
+              padding: 10px;
+    
+              input {
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+    
+                &::placeholder {
+                  color: lightgray;
+                }
               }
             }
           }
-        }
+          
   
         .userChat {
-          padding: 10px;
+          margin-top: 8px;
+          padding: 12px;
           display: flex;
           align-items: center;
           gap: 10px;
@@ -217,7 +234,7 @@
           cursor: pointer;
   
           &:hover {
-            background-color: rgb(198, 140, 218);
+            background-color: rgba(195, 178, 202, 0.763);
           }
   
           img {
@@ -253,12 +270,13 @@
   
         .chatInfo {
           height: 50px;
-          background-color: rgb(169, 90, 193);
+          background: linear-gradient(to right,rgb(139, 113, 161), rgba(96, 105, 156, 0.668));          
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 10px;
           color: lightgrey;
+          
         }
   
         .chatIcons {
@@ -364,9 +382,10 @@
             button {
               border: none;
               padding: 10px 15px;
-              color: white;
-              background-color: #efc5ee;
               border-radius: 15px;
+              background-color: rgb(216, 205, 219);
+              color: rgba(112, 72, 213, 0.875);
+              
             }
           }
         }
@@ -427,7 +446,7 @@
 
             .chatInfo{
                 height: 50px;
-                background-color: rgb(169, 90, 193);
+                background-color: rgb(87, 72, 92);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -446,7 +465,7 @@
             }
 
             .messages{
-                background-color: rgb(249, 231, 246);
+                background-color: rgb(245, 245, 245);
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow: scroll;
@@ -542,8 +561,10 @@
                     button{
                         border: none;
                         padding: 10px 15px;
-                        color: white;
-                        background-color: #efc5ee;
+                        background-color:rgba(112, 72, 213, 0.875);
+                        color:  rgb(216, 205, 219);
+                        border-radius: 5px;
+                        
                     }
                 }
             }
