@@ -65,17 +65,7 @@ const Chats = () => {
         );
       })}
 
-      {groupNames.map((group) => (
-        <div
-          className="userChat"
-          key={group.id}
-          onClick={() => handleSelect(group)}
-        >
-          <div className="userChatInfo">
-            <span>{group.name}</span>
-          </div>
-        </div>
-      ))}
+      
 
       
      

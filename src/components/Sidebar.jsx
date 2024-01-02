@@ -10,7 +10,7 @@ const Sidebar = () => {
       <Navbar />
       <Search/>
       <Chats/>
-      <Link to="/create-group">Grup Oluştur</Link>
+      
     </div>
   );
 };
