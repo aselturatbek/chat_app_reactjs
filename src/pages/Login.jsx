@@ -22,15 +22,15 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">bok Chat</span>
-        <span className="title">Login</span>
+        <span className="logo">Zchat</span>
+        <span className="title">Giriş</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
-          <button>Sign in</button>
-          {err && <span>Something went wrong</span>}
+          <input type="password" placeholder="şifre" />
+          <button>Giriş</button>
+          {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
         </form>
-        <p>You don't have an account? <Link to="/register">Register</Link></p>
+        <p>Henüz bir hesabın yokmu? <Link to="/register">Kayıt ol!</Link></p>
       </div>
     </div>
   );

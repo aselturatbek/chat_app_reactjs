@@ -63,22 +63,22 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">ZChat</span>
-        <span className="title">Register</span>
+        <span className="title">Kayıt</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="display name" />
+          <input required type="text" placeholder="kullanıcı adı" />
           <input required type="email" placeholder="email" />
-          <input required type="password" placeholder="password" />
+          <input required type="password" placeholder="şifre" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>Add an avatar</span>
+            <span>Fotoğraf Ekle</span>
           </label>
-          <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          <button disabled={loading}>Giriş</button>
+          {loading && "Fotoğraf yükleniyor.Kütfen bekleyin..."}
+          {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
         </form>
         <p>
-          You do have an account? <Link to="/register">Login</Link>
+          Zaten bir hesabın var mı? <Link to="/login">Giriş Yap!</Link>
         </p>
       </div>
     </div>
