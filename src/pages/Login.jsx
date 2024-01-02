@@ -30,7 +30,7 @@ const Login = () => {
           <button>Giriş</button>
           {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
         </form>
-        <p>Henüz bir hesabın yokmu? <Link to="/register">Kayıt ol!</Link></p>
+        <p>Henüz bir hesabın yok mu? <Link to="/register">Kayıt ol!</Link></p>
       </div>
     </div>
   );
