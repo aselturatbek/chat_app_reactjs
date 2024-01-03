@@ -5,8 +5,11 @@ import "./style.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
-
+import React, { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    document.title = "ZChat"; // Sayfa başlığını değiştir
+  }, []);
   const { currentUser } = useContext(AuthContext);
 
   const ProtectedRoute = ({ children }) => {
