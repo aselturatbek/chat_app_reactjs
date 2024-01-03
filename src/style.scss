@@ -16,6 +16,7 @@
       @content;
     }
   }
+
   
   @mixin custom-scrollbar {
     &::-webkit-scrollbar {
@@ -27,6 +28,7 @@
       border-radius: 5px;
     }
   }
+  
   * {
     
     
@@ -147,6 +149,8 @@
         position: relative;
         overflow-y: auto; // Scroll çubuğunu eklemek için
         max-height: 100vh;
+
+        
     
         
   
@@ -197,7 +201,7 @@
 
   
               @include tablet {
-                position: absolute;
+                position: fixed;
                 bottom: 10px;
               }
             }
