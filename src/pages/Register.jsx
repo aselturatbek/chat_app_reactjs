@@ -74,7 +74,7 @@ const Register = () => {
             <span>Fotoğraf Ekle</span>
           </label>
           <button disabled={loading}>Giriş</button>
-          {loading && "Fotoğraf yükleniyor.Kütfen bekleyin..."}
+          {loading && "Fotoğraf yükleniyor.Lütfen bekleyin..."}
           {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
         </form>
         <p>
