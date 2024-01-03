@@ -28,7 +28,7 @@ const Login = () => {
           <input type="email" placeholder="email" />
           <input type="password" placeholder="şifre" />
           <button>Giriş</button>
-          {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
+          {err && <span>Oops!Herhalde yanlış giden bir şeyler var..</span>}
         </form>
         <p>Henüz bir hesabın yok mu? <Link to="/register">Kayıt ol!</Link></p>
       </div>

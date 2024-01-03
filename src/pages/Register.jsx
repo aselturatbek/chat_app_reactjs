@@ -75,7 +75,7 @@ const Register = () => {
           </label>
           <button disabled={loading}>Giriş</button>
           {loading && "Fotoğraf yükleniyor.Lütfen bekleyin..."}
-          {err && <span>Herhalde yanlış giden bir şeyler var..</span>}
+          {err && <span>Oops!Herhalde yanlış giden bir şeyler var..</span>}
         </form>
         <p>
           Zaten bir hesabın var mı? <Link to="/login">Giriş Yap!</Link>
