@@ -17,6 +17,6 @@ npm (v6 or later)
 
 1.npm install
 2.npm start
-Or with yarn:
+
 
 Open your browser and go to http://localhost:3000 to see the application in action.
