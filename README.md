@@ -1,2 +1,2 @@
-# z-chat
- instant messaging app
+# Real-Time Chat Application with React JS
+ 
